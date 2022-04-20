@@ -47,8 +47,12 @@
 .project-experience strong {
   font-size: .875rem;
 }
-.summary{ font-size: 16px;}
-.summary .info{ line-height: 26px;}
-.summary .info.tel::before{ content: ''; display: inline-block; vertical-align: middle; background: url('https://www.coolfreecv.com/images/icon/mobile000000.png') no-repeat center; background-size: 100%; width: 18px; height: 24px;}
-.summary .info span{ display: inline-block;}
+.summary{ font-size: 16px;
+  .info{ line-height: 26px;
+    &::before{ content: ''; display: inline-block; vertical-align: middle; background: url('https://www.coolfreecv.com/images/icon/mobile000000.png') no-repeat center; background-size: 100%; width: 18px; height: 26px; margin-right: 10px;}
+    &.email::before{ background-image: url('https://www.coolfreecv.com/images/icon/mail000000.png'); width: 20px; height: 20px;}
+    span{ display: inline-block;}
+  }
+}
+
 .summary a{ display: inline-block; margin-left: 5px;}
